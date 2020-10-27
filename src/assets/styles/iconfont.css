@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('./iconfont/iconfont.eot?t=1585229860257');
+  /* IE9 */
+  src: url('./iconfont/iconfont.eot?t=1585229860257#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPEAAsAAAAACCAAAAN3AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDPIMAATYCJAMUCwwABCAFhG0HTBsQBxEVnJXIfhTGzfSkUUUTx0EVg/LV+SLf2PchHvrf7397zpz7vnn8pJdQSaKV1WniScQSJErwBslKE/FIu0N2eqngKWtp/RcKNQpjRa/Q1nTMpdBRyC5Zy/LTd+Tbnb98niGMQEiE5H8uxy1LYH47y+VGY9Iak4p6AUYTKAvHmhRYgAWSqOdAvHWZhwn0m2G2WLchIgH0qoxRgdi7qzgX9KYUak166BU6JQuruK7RW66WHVzzvx8/LQwliiYZR23aHlgAVn2xeyMm1J6xOXudGU8HbhmJ2ajEvlLDXhkGZkv9SvdqFfr1KspYnZBvYW/EtiUW7kjeb/7hkaoiiA4jdRCsooKVL3Y2QvIFSZTJwoBQ+ELk38tBDehHH47jJoPeJc3TzspRNT1dhK4aXnd8dGTGSI7xUFUbNW8qz3yUgOIyIDpHZeQmLE7V4N01Taah9BMpKEN/U4YkWxP10JjuVCBYcaEaFInYrnx7RHvqJsi5kIJiwQZFVNiwmMbk5Z+dJZ2fJ5+eJp6cBJiMQpQAXy6VxeeOtYzO4Rm4L/23mCepFQ0mTftvdl+kUfnU9LxCw2DHbTtwggM5PU9+mO1KuZsz3Zn06lnb2ZqhYydw48G+ZYu62njepWMz3B9cfKfUvM8rBpi9pXl6ucSnZXai2eBjqpmZXDKzJDr1Bp6rSvL9q6w0JYxYAizGgCJauhIvu/BE1hHhWAw4jUKERyF6BdM1eqHVJ8rTgCMXMqH8h7xbJmmh1JDspZ3PxvT5nb+x+l/aSramx2+vagUvRnurfHsLVdCe+CcyCu/n8VqWVVVgKJsqF9uE3K8xX4LC1fTjl1nGvRnHNEWsC708D1D0mIbUq0uqtNnQGLAYOnqthH6zbFw+YMI+KWofZrpIIIy6B8Wwx5BsG1/SgPaDoa0/jGwiYeYRuhvO7WLXzJ8xEkwh/kCRUKsstcyC9Atmto44KfAZD2RTuMF3vGz4jC3yGFPMMwtEFCimBk7kOKxrAs1UYiJOLqJD11VlL3ISajozewxFBEqB2AcoJEhLudXFLPf5C5SxahGuKalwPyBmFO0Dn8NrQTpL21Yl1/KM8ZQJCKEAhZEGOBEdqs0AAbq8XwklhCPv4dNCLlVJtZU688ubZ9wC/YztmiiRUaOJjtEBq4uoHZc5XiE7KvJ65rYY1ZM1ljodAA==') format('woff2'),
+    url('./iconfont/iconfont.woff?t=1585229860257') format('woff'),
+    url('./iconfont/iconfont.ttf?t=1585229860257') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('./iconfont/iconfont.svg?t=1585229860257#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

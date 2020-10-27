@@ -24,8 +24,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    alias: {
+    alias: {//创建引用的别名（自己随便创建，组件直接引动@，styles，common即可）
+      'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'styles':resolve('src/assets/styles'),
+      'common':resolve('src/common')
     }
   },
   module: {

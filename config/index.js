@@ -7,15 +7,23 @@ const path = require('path')
 module.exports = {
   dev: {
 
-    // Paths
+    // Paths webpack dev serve 提供的
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api':{//http://localhost:8080/static/mock==>意思是说api代理到taget上的域名下的/static/mock。直接调用/api即可
+        target:'http://localhost:8080',//如果需要调用后台服务器时候，则将这个本地域名改为后台开发人员电脑的Ip地址
+        changeOrigin: true,
+        pathRewrite: {//如果需要调用后台服务器时候，则将这个本地域名改为后台开发人员电脑的Ip地址。这个pathRewrite可以不用写了
+          'api':'/static/mock'
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: false,
+    autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
@@ -43,8 +51,11 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
-
+    assetsPublicPath: '/',//表示打包上线项目的目录是后台服务器的根目录。
+    // assetsPublicPath: '/project',//如果后台开发人员是把你的项目部署在服务器上的另一个文件夹中（把dist文件中的index.htm和static.css内容放project的文件夹中），
+                             //则需要在这个目录下放多一层/project可以了，然后再重新打包一次项目,npm run build把dist文件夹名字改为project，最后直接把这个文件夹放到后台服务器上可以。
+   
+   
     /**
      * Source Maps
      */
