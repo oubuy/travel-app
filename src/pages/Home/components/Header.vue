@@ -28,10 +28,14 @@ export default {
         ...mapGetters(['doubleCity'])
     }
 };
+
+
+// 1rem=html font-size=50px 因为是2倍图(750px)，所以设计稿高度是86px,实际上是43px。0.86rem*50=43px（86/2/50=86/100）巧妙转化
 </script>
 
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
+
 .header
     display: flex
     line-height:$headerHeight
